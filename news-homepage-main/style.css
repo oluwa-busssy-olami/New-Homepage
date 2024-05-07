@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+  color: var(--Dark-grayish-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.header nav {
+  display: none;
+}
+
+.showcase {
+  padding: 1.25rem;
+  padding-top: 0;
+}
+
+.showcase h1 {
+  font-size: 2rem;
+  color: var(--Very-dark-blue);
+  margin: 1rem 0;
+}
+
+.showcase div:first-child article:first-child p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--Softred);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0.7rem;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--Very-dark-blue);
+  cursor: pointer;
+}
+
+.showcase > div:last-child {
+  background-color: var(--Very-dark-blue);
+  margin-top: 2rem;
+  padding: 1.25rem 1.25rem 0;
+}
+
+.showcase > div:last-child article:not(:last-child) {
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+
+.showcase > div:last-child article {
+  padding: 1.25rem 0;
+}
+
+.showcase > div:last-child h2 {
+  color: var(--Softorange);
+}
+
+.showcase > div:last-child h3 {
+  color: var(--Off-white);
+  margin-bottom: 0.5rem;
+}
+
+.showcase > div:last-child h3:hover {
+  color: var(--Softorange);
+  cursor: pointer;
+}
+
+.game-cards {
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+}
+
+.game-cards article {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.game-cards img {
+  width: 150px;
+}
+
+.game-cards span {
+  color: var(--Grayish-blue);
+  font-weight: bold;
+  font-style: 2rem;
+  opacity: 75%;
+}
+
+.game-cards h4 {
+  font-size: 1.25;
+  color: var(--Dark-grayish-blue);
+  margin: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .showcase {
+    display: flex;
+    gap: 2rem;
+  }
+  .showcase > div:last-child {
+    margin-top: 0;
+  }
+}
